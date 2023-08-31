@@ -1,13 +1,13 @@
 package com.gridnine.testing;
 
-public class NoSuchFilteringResultException extends RuntimeException {
+public class NoFilteringResultException extends RuntimeException {
 
     @Override
     public String getMessage() {
         return super.getMessage();
     }
 
-    public NoSuchFilteringResultException(String message) {
+    public NoFilteringResultException(String message) {
         super(message);
     }
 }

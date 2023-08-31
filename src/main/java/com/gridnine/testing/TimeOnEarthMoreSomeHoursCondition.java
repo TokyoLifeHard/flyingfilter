@@ -40,7 +40,7 @@ public class TimeOnEarthMoreSomeHoursCondition implements FilterCondition{
                 .collect(Collectors.toList());
 
         if (filteringResult.size()==0){
-            throw new NoSuchFilteringResultException("No filtering result");
+            throw new NoFilteringResultException("No filtering result");
         }
 
         return filteringResult;

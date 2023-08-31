@@ -20,7 +20,7 @@ public class FlyingFilterService {
 
         try {
             filteringResult.addAll(filterCondition.excuteCondtion(flights));
-        } catch (NoFlightsException | NoSuchFilteringResultException e) {
+        } catch (NoFlightsException | NoFilteringResultException e) {
             System.out.println(e.getMessage());
         }
 
